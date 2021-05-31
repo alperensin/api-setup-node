@@ -1,7 +1,13 @@
-import { User } from '@models/User';
+import User from '@models/User';
 
-export class UserController {
-    teste() {
-        const user = new User('André Luiz', 'andreluizperensin@gmail.com');
+export default class UserController {
+  teste() {
+    const user = new User();
+
+    if (user.email) {
+      return true;
     }
+
+    return false;
+  }
 }

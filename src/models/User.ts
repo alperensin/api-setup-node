@@ -1,9 +1,5 @@
-export class User { 
-    name: string;
-    email: string;
+export default class User {
+    name?: string;
 
-    constructor(name: string, email: string) {
-        this.name = name;
-        this.email = email;
-    }
+    email?: string;
 }
